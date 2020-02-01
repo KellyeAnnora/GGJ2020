@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+
     public LayerMask movementMask;
 
     public Interactable focus;
@@ -57,6 +58,8 @@ public class PlayerController : MonoBehaviour
         {
             agent.SetDestination(target.position);
         }
+
+
     }
 
     void SetFocus (Interactable newFocus)
