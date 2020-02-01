@@ -18,6 +18,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:Unity-Technologies/ScriptableRenderPipeline.git",
-    "revision": "462033f359f783f5d71dc578159bf5827abb41e2"
+    "revision": "be7fd46aa1eae30d9fe030a3b9f24c870ddb25f7"
   }
 }

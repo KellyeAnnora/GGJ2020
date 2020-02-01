@@ -24,7 +24,7 @@ namespace Runemark.DialogueSystem
         public void Update()
         {
             DialogueSystem.SetGlobalVariable("PlayerPower", combatPower);
-            DialogueSystem.SetGlobalVariable("WinChance", WinChance);
+            //DialogueSystem.SetGlobalVariable("WinChance", WinChance);
         }
     }
 }
