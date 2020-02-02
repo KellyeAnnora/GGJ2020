@@ -1,12 +1,14 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Runemark.DialogueSystem;
 
 public class BotDeath : MonoBehaviour
 {
     public GameObject[] prefabs;
 
-    public float cubeSize = 0.2f;
+    public float cubeSize = 0.7f;
     public int cubesInRow = 5;
 
     float cubesPivotDistance;
@@ -16,21 +18,24 @@ public class BotDeath : MonoBehaviour
     public float explosionRadius = 4f;
     public float explosionUpward = 0.4f;
 
+    DialogueInterface dialogue;
+
     private void Start()
     {
+        dialogue = GetComponent<DialogueInterface>();
         CalculatePivot();
     }
 
-    //access THIS method to trigger explosion
     public void DeathSequence()
     {
+        dialogue.DialogueClose();
         Explode();
     }
 
     void Explode()
     {
         gameObject.SetActive(false);
-        
+
         //loop 3 times to create pieces in x, y, z coordinates
         for (int x = 0; x < cubesInRow; x++)
         {
@@ -48,14 +53,14 @@ public class BotDeath : MonoBehaviour
         //get colliders in that position and radius
         Collider[] colliders = Physics.OverlapSphere(explosionPos, explosionRadius);
         //add explosion force to all colliders in that sphere
-        foreach(Collider hit in colliders)
+        foreach (Collider hit in colliders)
         {
             //get rb from collider object
             Rigidbody rb = hit.GetComponent<Rigidbody>();
             if (rb != null)
             {
                 //add explosive force
-                rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, explosionUpward);
+                rb.AddExplosionForce(explosionForce, explosionPos, explosionRadius, explosionUpward);
             }
         }
     }
@@ -68,7 +73,7 @@ public class BotDeath : MonoBehaviour
         piece = Instantiate(prefabs[prefabChoice]);
 
         //set piece position and scale
-        piece.transform.position = transform.position = new Vector3(cubeSize * x, cubeSize * y, cubeSize * z) - cubesPivot;
+        piece.transform.position = transform.position + new Vector3(cubeSize * x, cubeSize * y, cubeSize * z) - cubesPivot;
         piece.transform.localScale = new Vector3(cubeSize, cubeSize, cubeSize);
 
         //add rigidbody and set mass
@@ -83,3 +88,4 @@ public class BotDeath : MonoBehaviour
         cubesPivot = new Vector3(cubesPivotDistance, cubesPivotDistance, cubesPivotDistance);
     }
 }
+

@@ -67,7 +67,7 @@
                 float distance = Vector3.Distance(transform.position, Conversation.Player.position);
                 if(Conversation.Trigger.Mode == Trigger.Modes.Custom)
                 {
-                    Debug.Log("Distance: " + distance);
+                    //Debug.Log("Distance: " + distance);
 
                     if (distance > Conversation.ExitDistance)
                         StopDialogue(Conversation);

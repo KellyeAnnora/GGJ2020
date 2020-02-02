@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Runemark.DialogueSystem;
 
 public class Interactable : MonoBehaviour
 {
@@ -11,10 +12,17 @@ public class Interactable : MonoBehaviour
 
     bool hasInteracted = false;
 
+    DialogueInterface dialogue;
+
+    private void Start()
+    {
+        dialogue = GetComponent<DialogueInterface>();
+    }
+
     public virtual void Interact()
     {
-        //INTERACTION
         Debug.Log("Interacting with " + transform.name);
+        dialogue.DialogueOnInteraction();
     }
 
     private void Update()
@@ -43,6 +51,7 @@ public class Interactable : MonoBehaviour
         isFocus = false;
         player = null;
         hasInteracted = false;
+        dialogue.DialogueClose();
     }
 
     private void OnDrawGizmosSelected()
@@ -52,3 +61,7 @@ public class Interactable : MonoBehaviour
     }
 
 }
+
+
+
+

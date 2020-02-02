@@ -1,57 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8159717618531321122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 454f3a3930762384bb88d8425ae6afe7, type: 3}
-  m_Name: Relation
-  m_EditorClassIdentifier: 
-  _id: Relation-2/1/2020 11:12:25 AM-4455
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: A
-      PinType: 0
-      _variableTypeString: System.Int32
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Get-2/1/2020 11:17:11 AM-5557
-        PinName: Value
-    - Name: B
-      PinType: 0
-      _variableTypeString: System.Int32
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Get-2/1/2020 11:14:35 AM-7157
-        PinName: Value
-    - Name: Result
-      PinType: 1
-      _variableTypeString: System.Boolean
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Branch-2/1/2020 11:14:21 AM-7864
-        PinName: Condition
-  IsInitialized: 1
-  _hasChanges: 1
-  _position: {x: 729.14844, y: 266.54663}
-  time: 0
-  CanDelete: 1
-  CanCopy: 1
-  _relationMode: 1
-  _serializedType: System.Int32
---- !u!114 &-6622151500767862433
+--- !u!114 &-6951126318853941054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,13 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a74c99f54f0d124dade930ab378a01f, type: 3}
   m_Name: Text
   m_EditorClassIdentifier: 
-  _id: Text-1/31/2020 9:30:46 PM-1344
+  _id: Text-2/1/2020 2:28:21 PM-6589
   _description: 
   _parentObject:
     _serializedObject: {fileID: 11400000}
     _serializedString: builtIn
   Variables:
-    _variables: []
+    _variables:
+    - _name: AnswerVariableInput_0
+      _idSuffix: -2/1/2020 2:28:34 PM-1049
+      _group: Input
+      _type: System.String
+      Save: 0
+      DefaultValue:
+        _serializedObject: {fileID: 0}
+        _serializedString: null
+      _value:
+        _serializedObject: {fileID: 0}
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAABRTdGVhbCBoaXMgYm9keSBwYXJ0cws=
     owner: {fileID: 0}
   PinCollection:
     _pins:
@@ -78,265 +38,23 @@ MonoBehaviour:
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Text-1/31/2020 9:29:48 PM-7232
-        PinName: AnswerOutput_0
-  IsInitialized: 1
-  _hasChanges: 1
-  _position: {x: 650.8176, y: -173.03003}
-  time: 0
-  CanDelete: 1
-  CanCopy: 1
-  IsEntered: 0
-  IsFinished: 0
-  _calculatedNextNode:
-    Name: 
-    PinType: 0
-    _variableTypeString: 
-    _isDynamicType: 0
-    Connections: []
-  ActorName: 
-  Text: I know right?
-  Portrait: {fileID: 0}
-  Audio: {fileID: 0}
-  AudioStartTime: 0
-  AudioEndTime: 0
-  AudioDelay: 0
-  CustomCameraEnable: 0
-  CameraIndex: 0
-  CustomSkinEnable: 0
-  Skin: 
-  Answers: []
-  AudioFoldout: 0
-  CameraFoldout: 0
-  AdvancedSettingsFoldout: 0
---- !u!114 &-5733940165112199066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c0b6d2a7064404d9b4c770c12cd64d, type: 3}
-  m_Name: Conversation
-  m_EditorClassIdentifier: 
-  _id: Conversation-1/31/2020 9:26:30 PM-3291
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: OUT
-      PinType: 3
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Text-1/31/2020 9:29:48 PM-7232
-        PinName: IN
-  IsInitialized: 1
-  _hasChanges: 0
-  _position: {x: -200.5385, y: -55.153835}
-  time: 0
-  CanDelete: 0
-  CanCopy: 0
-  IsEntered: 0
-  IsFinished: 0
-  _calculatedNextNode:
-    Name: 
-    PinType: 0
-    _variableTypeString: 
-    _isDynamicType: 0
-    Connections: []
---- !u!114 &-1646279402119016539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9a2681e1fdf6a941a7b03dfab965701, type: 3}
-  m_Name: Get
-  m_EditorClassIdentifier: 
-  _id: Get-2/1/2020 11:17:11 AM-5557
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: Value
-      PinType: 1
-      _variableTypeString: System.Int32
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Relation-2/1/2020 11:12:25 AM-4455
-        PinName: A
-  IsInitialized: 1
-  _hasChanges: 1
-  _position: {x: 450.52722, y: 233.93329}
-  time: 0
-  CanDelete: 1
-  CanCopy: 1
-  _variableName: EnemyPower
-  _scope: 0
---- !u!114 &-1341699156479650246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9a2681e1fdf6a941a7b03dfab965701, type: 3}
-  m_Name: Get
-  m_EditorClassIdentifier: 
-  _id: Get-2/1/2020 11:14:35 AM-7157
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: Value
-      PinType: 1
-      _variableTypeString: System.Int32
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Relation-2/1/2020 11:12:25 AM-4455
-        PinName: B
-  IsInitialized: 1
-  _hasChanges: 1
-  _position: {x: 418.8328, y: 368.40616}
-  time: 0
-  CanDelete: 1
-  CanCopy: 1
-  _variableName: PlayerPower
-  _scope: 1
---- !u!114 &-1175196756494506149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a74c99f54f0d124dade930ab378a01f, type: 3}
-  m_Name: Text
-  m_EditorClassIdentifier: 
-  _id: Text-2/1/2020 11:18:03 AM-8927
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: IN
-      PinType: 2
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Branch-2/1/2020 11:14:21 AM-7864
-        PinName: False
-  IsInitialized: 1
-  _hasChanges: 1
-  _position: {x: 1191.013, y: 232.82727}
-  time: 0
-  CanDelete: 1
-  CanCopy: 1
-  IsEntered: 0
-  IsFinished: 0
-  _calculatedNextNode:
-    Name: 
-    PinType: 0
-    _variableTypeString: 
-    _isDynamicType: 0
-    Connections: []
-  ActorName: 
-  Text: Idiot, I am too powerful fo you.  I have defeated you.
-  Portrait: {fileID: 0}
-  Audio: {fileID: 0}
-  AudioStartTime: 0
-  AudioEndTime: 0
-  AudioDelay: 0
-  CustomCameraEnable: 0
-  CameraIndex: 0
-  CustomSkinEnable: 0
-  Skin: 
-  Answers: []
-  AudioFoldout: 0
-  CameraFoldout: 0
-  AdvancedSettingsFoldout: 0
---- !u!114 &-823606909564372636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b925990000b3e41bf43e1909d22ec2, type: 3}
-  m_Name: Branch
-  m_EditorClassIdentifier: 
-  _id: Branch-2/1/2020 11:14:21 AM-7864
-  _description: 
-  _parentObject:
-    _serializedObject: {fileID: 11400000}
-    _serializedString: builtIn
-  Variables:
-    _variables: []
-    owner: {fileID: 0}
-  PinCollection:
-    _pins:
-    - Name: Condition
-      PinType: 0
-      _variableTypeString: System.Boolean
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Relation-2/1/2020 11:12:25 AM-4455
-        PinName: Result
-    - Name: True
-      PinType: 3
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Text-1/31/2020 9:30:27 PM-2928
-        PinName: IN
-    - Name: False
-      PinType: 3
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Text-2/1/2020 11:18:03 AM-8927
-        PinName: IN
-    - Name: IN
-      PinType: 2
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections:
-      - NodeID: Call Event-2/1/2020 11:11:17 AM-8783
+      - NodeID: Call Event-2/1/2020 2:29:24 PM-7242
         PinName: OUT
+    - Name: AnswerOutput_0
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Call Event-2/1/2020 4:49:06 PM-2800
+        PinName: IN
+    - Name: AnswerInput_0
+      PinType: 0
+      _variableTypeString: System.Boolean
+      _isDynamicType: 0
+      Connections: []
   IsInitialized: 1
-  _hasChanges: 0
-  _position: {x: 954.14844, y: 147.54663}
+  _hasChanges: 1
+  _position: {x: 1328.8572, y: -258.85712}
   time: 0
   CanDelete: 1
   CanCopy: 1
@@ -348,7 +66,26 @@ MonoBehaviour:
     _variableTypeString: 
     _isDynamicType: 0
     Connections: []
---- !u!114 &-431545015631126553
+  ActorName: 
+  Text: You killed that bitch
+  Portrait: {fileID: 0}
+  Audio: {fileID: 0}
+  AudioStartTime: 0
+  AudioEndTime: 0
+  AudioDelay: 0
+  CustomCameraEnable: 0
+  CameraIndex: 0
+  CustomSkinEnable: 0
+  Skin: 
+  Answers:
+  - Type: 0
+    InputName: AnswerInput_0
+    VariableName: AnswerVariableInput_0
+    OutputName: AnswerOutput_0
+  AudioFoldout: 0
+  CameraFoldout: 0
+  AdvancedSettingsFoldout: 0
+--- !u!114 &-6074462746535206019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70d70b9344b82b40ad0a551ea3a7160, type: 3}
   m_Name: Call Event
   m_EditorClassIdentifier: 
-  _id: Call Event-2/1/2020 11:11:17 AM-8783
+  _id: Call Event-2/1/2020 2:28:10 PM-6200
   _description: 
   _parentObject:
     _serializedObject: {fileID: 11400000}
@@ -368,7 +105,126 @@ MonoBehaviour:
   Variables:
     _variables:
     - _name: EventName
-      _idSuffix: -2/1/2020 11:11:17 AM-8528
+      _idSuffix: -2/1/2020 2:28:10 PM-7841
+      _group: Default
+      _type: System.String
+      Save: 0
+      DefaultValue:
+        _serializedObject: {fileID: 0}
+        _serializedString: null
+      _value:
+        _serializedObject: {fileID: 0}
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAAhCYWRTdHVmZgs=
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: IN
+      PinType: 2
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Branch-2/1/2020 2:26:51 PM-4262
+        PinName: False
+    - Name: OUT
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Text-2/1/2020 2:27:51 PM-1924
+        PinName: IN
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 1038, y: 92}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  IsEntered: 0
+  IsFinished: 0
+  _calculatedNextNode:
+    Name: 
+    PinType: 0
+    _variableTypeString: 
+    _isDynamicType: 0
+    Connections: []
+--- !u!114 &-4711844365846754350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a74c99f54f0d124dade930ab378a01f, type: 3}
+  m_Name: Text
+  m_EditorClassIdentifier: 
+  _id: Text-2/1/2020 2:27:51 PM-1924
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: IN
+      PinType: 2
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Call Event-2/1/2020 2:28:10 PM-6200
+        PinName: OUT
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 1312, y: 96}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  IsEntered: 0
+  IsFinished: 0
+  _calculatedNextNode:
+    Name: 
+    PinType: 0
+    _variableTypeString: 
+    _isDynamicType: 0
+    Connections: []
+  ActorName: 
+  Text: The lvl. 5 cube thrashes your ass
+  Portrait: {fileID: 0}
+  Audio: {fileID: 0}
+  AudioStartTime: 0
+  AudioEndTime: 0
+  AudioDelay: 0
+  CustomCameraEnable: 0
+  CameraIndex: 0
+  CustomSkinEnable: 0
+  Skin: 
+  Answers: []
+  AudioFoldout: 0
+  CameraFoldout: 0
+  AdvancedSettingsFoldout: 0
+--- !u!114 &-4087282715173762480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70d70b9344b82b40ad0a551ea3a7160, type: 3}
+  m_Name: Call Event
+  m_EditorClassIdentifier: 
+  _id: Call Event-2/1/2020 2:26:41 PM-7710
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables:
+    - _name: EventName
+      _idSuffix: -2/1/2020 2:26:41 PM-9497
       _group: Default
       _type: System.String
       Save: 0
@@ -386,18 +242,171 @@ MonoBehaviour:
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Text-1/31/2020 9:29:48 PM-7232
+      - NodeID: Text-2/1/2020 2:25:38 PM-1564
         PinName: AnswerOutput_1
     - Name: OUT
       PinType: 3
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Branch-2/1/2020 11:14:21 AM-7864
+      - NodeID: Branch-2/1/2020 2:26:51 PM-4262
         PinName: IN
   IsInitialized: 1
   _hasChanges: 1
-  _position: {x: 630.6072, y: 119.33838}
+  _position: {x: 591, y: -22}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  IsEntered: 0
+  IsFinished: 0
+  _calculatedNextNode:
+    Name: 
+    PinType: 0
+    _variableTypeString: 
+    _isDynamicType: 0
+    Connections: []
+--- !u!114 &-2843129634868860830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c0b6d2a7064404d9b4c770c12cd64d, type: 3}
+  m_Name: Ambient
+  m_EditorClassIdentifier: 
+  _id: Ambient-2/1/2020 2:25:34 PM-3055
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: OUT
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections: []
+  IsInitialized: 1
+  _hasChanges: 0
+  _position: {x: 0, y: 50}
+  time: 0
+  CanDelete: 0
+  CanCopy: 0
+  IsEntered: 0
+  IsFinished: 0
+  _calculatedNextNode:
+    Name: 
+    PinType: 0
+    _variableTypeString: 
+    _isDynamicType: 0
+    Connections: []
+--- !u!114 &-2219320258802540422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454f3a3930762384bb88d8425ae6afe7, type: 3}
+  m_Name: Relation
+  m_EditorClassIdentifier: 
+  _id: Relation-2/1/2020 2:27:31 PM-4881
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: A
+      PinType: 0
+      _variableTypeString: System.Int32
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Get-2/1/2020 2:27:03 PM-9084
+        PinName: Value
+    - Name: B
+      PinType: 0
+      _variableTypeString: System.Int32
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Get-2/1/2020 2:26:59 PM-6182
+        PinName: Value
+    - Name: Result
+      PinType: 1
+      _variableTypeString: System.Boolean
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Branch-2/1/2020 2:26:51 PM-4262
+        PinName: Condition
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 711, y: 167}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  _relationMode: 1
+  _serializedType: System.Int32
+--- !u!114 &-2205419491864062109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70d70b9344b82b40ad0a551ea3a7160, type: 3}
+  m_Name: Call Event
+  m_EditorClassIdentifier: 
+  _id: Call Event-2/1/2020 2:29:24 PM-7242
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables:
+    - _name: EventName
+      _idSuffix: -2/1/2020 2:29:24 PM-1477
+      _group: Default
+      _type: System.String
+      Save: 0
+      DefaultValue:
+        _serializedObject: {fileID: 0}
+        _serializedString: null
+      _value:
+        _serializedObject: {fileID: 0}
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAAlHb29kU3R1ZmYL
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: IN
+      PinType: 2
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Branch-2/1/2020 2:26:51 PM-4262
+        PinName: True
+    - Name: OUT
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Text-2/1/2020 2:28:21 PM-6589
+        PinName: IN
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 1024.0183, y: -144.24463}
   time: 0
   CanDelete: 1
   CanCopy: 1
@@ -421,7 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9734e2b86b919b4f8b5f0d2e3e3c261, type: 3}
   m_Name: New DialogueGraph
   m_EditorClassIdentifier: 
-  _id: DialogueRoot-1/31/2020 9:26:30 PM-3747
+  _id: DialogueRoot-2/1/2020 2:25:33 PM-1386
   _description: 
   _parentObject:
     _serializedObject: {fileID: 0}
@@ -429,7 +438,7 @@ MonoBehaviour:
   Variables:
     _variables:
     - _name: EnemyPower
-      _idSuffix: -2/1/2020 11:16:41 AM-4298
+      _idSuffix: -2/1/2020 2:27:09 PM-8608
       _group: Default
       _type: System.Int32
       Save: 0
@@ -453,7 +462,7 @@ MonoBehaviour:
       _isDynamicType: 0
       Connections: []
   IsInitialized: 1
-  _hasChanges: 0
+  _hasChanges: 1
   _position: {x: 0, y: 0}
   time: 0
   CanDelete: 1
@@ -466,25 +475,28 @@ MonoBehaviour:
     _variableTypeString: 
     _isDynamicType: 0
     Connections: []
-  _zoomOffset: {x: 471.41492, y: -241.76334}
-  selectedVariableID: Runemark.VisualEditor.Variable-2/1/2020 11:16:41 AM-4298
+  _zoomOffset: {x: 117.32824, y: -627.8456}
+  selectedVariableID: Runemark.VisualEditor.Variable-2/1/2020 2:27:09 PM-8608
   _nodes:
     _nodes:
-    - {fileID: -5733940165112199066}
-    - {fileID: 4097080264659538843}
-    - {fileID: 2300862070222132525}
-    - {fileID: 8248271455013636485}
-    - {fileID: -6622151500767862433}
-    - {fileID: -431545015631126553}
-    - {fileID: -8159717618531321122}
-    - {fileID: -823606909564372636}
-    - {fileID: -1341699156479650246}
-    - {fileID: -1646279402119016539}
-    - {fileID: -1175196756494506149}
+    - {fileID: 3403720114703821697}
+    - {fileID: -2843129634868860830}
+    - {fileID: 1639721435042148342}
+    - {fileID: 3506998320114757493}
+    - {fileID: -4087282715173762480}
+    - {fileID: 5134087013240590771}
+    - {fileID: 5584475918022305664}
+    - {fileID: 9092628140280590454}
+    - {fileID: -2219320258802540422}
+    - {fileID: -4711844365846754350}
+    - {fileID: -6074462746535206019}
+    - {fileID: -6951126318853941054}
+    - {fileID: -2205419491864062109}
+    - {fileID: 330187847489145417}
   ExecQueue: []
   translator:
     translations: []
---- !u!114 &86442880583586512
+--- !u!114 &330187847489145417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -496,19 +508,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70d70b9344b82b40ad0a551ea3a7160, type: 3}
   m_Name: Call Event
   m_EditorClassIdentifier: 
-  _id: 
+  _id: Call Event-2/1/2020 4:49:06 PM-2800
   _description: 
   _parentObject:
-    _serializedObject: {fileID: 0}
-    _serializedString: null
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
   Variables:
-    _variables: []
+    _variables:
+    - _name: EventName
+      _idSuffix: -2/1/2020 4:49:06 PM-3780
+      _group: Default
+      _type: System.String
+      Save: 0
+      DefaultValue:
+        _serializedObject: {fileID: 0}
+        _serializedString: null
+      _value:
+        _serializedObject: {fileID: 0}
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAAhCb3REZWF0aAs=
     owner: {fileID: 0}
   PinCollection:
-    _pins: []
-  IsInitialized: 0
-  _hasChanges: 0
-  _position: {x: 0, y: 0}
+    _pins:
+    - Name: IN
+      PinType: 2
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Text-2/1/2020 2:28:21 PM-6589
+        PinName: AnswerOutput_0
+    - Name: OUT
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections: []
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 1690.7902, y: -121.77783}
   time: 0
   CanDelete: 1
   CanCopy: 1
@@ -520,7 +555,7 @@ MonoBehaviour:
     _variableTypeString: 
     _isDynamicType: 0
     Connections: []
---- !u!114 &2300862070222132525
+--- !u!114 &1639721435042148342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a74c99f54f0d124dade930ab378a01f, type: 3}
   m_Name: Text
   m_EditorClassIdentifier: 
-  _id: Text-1/31/2020 9:29:48 PM-7232
+  _id: Text-2/1/2020 2:25:38 PM-1564
   _description: 
   _parentObject:
     _serializedObject: {fileID: 11400000}
@@ -540,7 +575,7 @@ MonoBehaviour:
   Variables:
     _variables:
     - _name: AnswerVariableInput_0
-      _idSuffix: -1/31/2020 9:29:59 PM-4971
+      _idSuffix: -2/1/2020 2:26:03 PM-8090
       _group: Input
       _type: System.String
       Save: 0
@@ -549,9 +584,9 @@ MonoBehaviour:
         _serializedString: null
       _value:
         _serializedObject: {fileID: 0}
-        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAAlIb3cgbmljZSEL
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAAtUaGF0J3MgbmljZQs=
     - _name: AnswerVariableInput_1
-      _idSuffix: -1/31/2020 9:30:10 PM-2135
+      _idSuffix: -2/1/2020 2:26:04 PM-6602
       _group: Input
       _type: System.String
       Save: 0
@@ -560,7 +595,7 @@ MonoBehaviour:
         _serializedString: null
       _value:
         _serializedObject: {fileID: 0}
-        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAACpLaWxsIHRoYXQgYml0Y2ggYW5kIHN0ZWFsIHRoZWlyIGJvZHkgcGFydHML
+        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAChLaWxsIHRoYXQgYml0Y2ggYW5kIHN0ZWFsIGhpcyBib2R5IHBhcnRzCw==
     owner: {fileID: 0}
   PinCollection:
     _pins:
@@ -569,14 +604,14 @@ MonoBehaviour:
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Conversation-1/31/2020 9:26:30 PM-3291
+      - NodeID: Conversation-2/1/2020 2:25:33 PM-7807
         PinName: OUT
     - Name: AnswerOutput_0
       PinType: 3
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Text-1/31/2020 9:30:46 PM-1344
+      - NodeID: Text-2/1/2020 2:26:27 PM-7520
         PinName: IN
     - Name: AnswerInput_0
       PinType: 0
@@ -588,7 +623,7 @@ MonoBehaviour:
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Call Event-2/1/2020 11:11:17 AM-8783
+      - NodeID: Call Event-2/1/2020 2:26:41 PM-7710
         PinName: IN
     - Name: AnswerInput_1
       PinType: 0
@@ -597,7 +632,7 @@ MonoBehaviour:
       Connections: []
   IsInitialized: 1
   _hasChanges: 1
-  _position: {x: 263.81763, y: -109.03003}
+  _position: {x: 224, y: -227}
   time: 0
   CanDelete: 1
   CanCopy: 1
@@ -610,9 +645,7 @@ MonoBehaviour:
     _isDynamicType: 0
     Connections: []
   ActorName: 
-  Text: 'This cube has a family
-
-    {global:WinChance}% chance to win combat.'
+  Text: This lvl. 5 cube has a family
   Portrait: {fileID: 0}
   Audio: {fileID: 0}
   AudioStartTime: 0
@@ -634,7 +667,7 @@ MonoBehaviour:
   AudioFoldout: 0
   CameraFoldout: 0
   AdvancedSettingsFoldout: 0
---- !u!114 &4097080264659538843
+--- !u!114 &3403720114703821697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -644,9 +677,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7c0b6d2a7064404d9b4c770c12cd64d, type: 3}
-  m_Name: Ambient
+  m_Name: Conversation
   m_EditorClassIdentifier: 
-  _id: Ambient-1/31/2020 9:26:30 PM-5982
+  _id: Conversation-2/1/2020 2:25:33 PM-7807
   _description: 
   _parentObject:
     _serializedObject: {fileID: 11400000}
@@ -660,10 +693,12 @@ MonoBehaviour:
       PinType: 3
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
-      Connections: []
+      Connections:
+      - NodeID: Text-2/1/2020 2:25:38 PM-1564
+        PinName: IN
   IsInitialized: 1
   _hasChanges: 0
-  _position: {x: -221.53844, y: 177.69238}
+  _position: {x: 0, y: -50}
   time: 0
   CanDelete: 0
   CanCopy: 0
@@ -675,7 +710,7 @@ MonoBehaviour:
     _variableTypeString: 
     _isDynamicType: 0
     Connections: []
---- !u!114 &8248271455013636485
+--- !u!114 &3506998320114757493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -687,24 +722,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a74c99f54f0d124dade930ab378a01f, type: 3}
   m_Name: Text
   m_EditorClassIdentifier: 
-  _id: Text-1/31/2020 9:30:27 PM-2928
+  _id: Text-2/1/2020 2:26:27 PM-7520
   _description: 
   _parentObject:
     _serializedObject: {fileID: 11400000}
     _serializedString: builtIn
   Variables:
-    _variables:
-    - _name: AnswerVariableInput_0
-      _idSuffix: -2/1/2020 12:09:42 PM-5939
-      _group: Input
-      _type: System.String
-      Save: 0
-      DefaultValue:
-        _serializedObject: {fileID: 0}
-        _serializedString: null
-      _value:
-        _serializedObject: {fileID: 0}
-        _serializedString: AAEAAAD/////AQAAAAAAAAAGAQAAAA9TY3JhcCB0aGUgcm9ib3QL
+    _variables: []
     owner: {fileID: 0}
   PinCollection:
     _pins:
@@ -713,21 +737,11 @@ MonoBehaviour:
       _variableTypeString: Runemark.VisualEditor.ExecutableNode
       _isDynamicType: 0
       Connections:
-      - NodeID: Branch-2/1/2020 11:14:21 AM-7864
-        PinName: True
-    - Name: AnswerOutput_0
-      PinType: 3
-      _variableTypeString: Runemark.VisualEditor.ExecutableNode
-      _isDynamicType: 0
-      Connections: []
-    - Name: AnswerInput_0
-      PinType: 0
-      _variableTypeString: System.Boolean
-      _isDynamicType: 0
-      Connections: []
+      - NodeID: Text-2/1/2020 2:25:38 PM-1564
+        PinName: AnswerOutput_0
   IsInitialized: 1
   _hasChanges: 1
-  _position: {x: 1195.1512, y: -93.49158}
+  _position: {x: 566, y: -298}
   time: 0
   CanDelete: 1
   CanCopy: 1
@@ -740,7 +754,7 @@ MonoBehaviour:
     _isDynamicType: 0
     Connections: []
   ActorName: 
-  Text: '"NOOOOOOOOOOO" - Dead cube'
+  Text: I know, right?
   Portrait: {fileID: 0}
   Audio: {fileID: 0}
   AudioStartTime: 0
@@ -750,11 +764,145 @@ MonoBehaviour:
   CameraIndex: 0
   CustomSkinEnable: 0
   Skin: 
-  Answers:
-  - Type: 0
-    InputName: AnswerInput_0
-    VariableName: AnswerVariableInput_0
-    OutputName: AnswerOutput_0
+  Answers: []
   AudioFoldout: 0
   CameraFoldout: 0
   AdvancedSettingsFoldout: 0
+--- !u!114 &5134087013240590771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b925990000b3e41bf43e1909d22ec2, type: 3}
+  m_Name: Branch
+  m_EditorClassIdentifier: 
+  _id: Branch-2/1/2020 2:26:51 PM-4262
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: Condition
+      PinType: 0
+      _variableTypeString: System.Boolean
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Relation-2/1/2020 2:27:31 PM-4881
+        PinName: Result
+    - Name: True
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Call Event-2/1/2020 2:29:24 PM-7242
+        PinName: IN
+    - Name: False
+      PinType: 3
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Call Event-2/1/2020 2:28:10 PM-6200
+        PinName: IN
+    - Name: IN
+      PinType: 2
+      _variableTypeString: Runemark.VisualEditor.ExecutableNode
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Call Event-2/1/2020 2:26:41 PM-7710
+        PinName: OUT
+  IsInitialized: 1
+  _hasChanges: 0
+  _position: {x: 837, y: -21}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  IsEntered: 0
+  IsFinished: 0
+  _calculatedNextNode:
+    Name: 
+    PinType: 0
+    _variableTypeString: 
+    _isDynamicType: 0
+    Connections: []
+--- !u!114 &5584475918022305664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a2681e1fdf6a941a7b03dfab965701, type: 3}
+  m_Name: Get
+  m_EditorClassIdentifier: 
+  _id: Get-2/1/2020 2:26:59 PM-6182
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: Value
+      PinType: 1
+      _variableTypeString: System.Int32
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Relation-2/1/2020 2:27:31 PM-4881
+        PinName: B
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 478, y: 231}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  _variableName: PlayerPower
+  _scope: 1
+--- !u!114 &9092628140280590454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a2681e1fdf6a941a7b03dfab965701, type: 3}
+  m_Name: Get
+  m_EditorClassIdentifier: 
+  _id: Get-2/1/2020 2:27:03 PM-9084
+  _description: 
+  _parentObject:
+    _serializedObject: {fileID: 11400000}
+    _serializedString: builtIn
+  Variables:
+    _variables: []
+    owner: {fileID: 0}
+  PinCollection:
+    _pins:
+    - Name: Value
+      PinType: 1
+      _variableTypeString: System.Int32
+      _isDynamicType: 0
+      Connections:
+      - NodeID: Relation-2/1/2020 2:27:31 PM-4881
+        PinName: A
+  IsInitialized: 1
+  _hasChanges: 1
+  _position: {x: 480, y: 119}
+  time: 0
+  CanDelete: 1
+  CanCopy: 1
+  _variableName: EnemyPower
+  _scope: 0

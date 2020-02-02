@@ -56,11 +56,17 @@
 
             var v = _globals.Variables.GetByName(name);
 
-            if (v.type == typeof(T))
-                v.Value = value;
-            else
-                RunemarkDebug.Error("{0} global variable's type is {1}, and can't set it's value to {2}({3})",
-                    name, v.type, value, typeof(T));
+            if (v != null)
+            {
+                if (v.type == typeof(T))
+                {
+                    v.Value = value;
+                }
+                else
+                    RunemarkDebug.Error("{0} global variable's type is {1}, and can't set it's value to {2}({3})",
+                        name, v.type, value, typeof(T));
+            }
+
         }
         
 
